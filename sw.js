@@ -1,8 +1,8 @@
 const SCOPE=new URL(self.registration.scope);
 const BASE=SCOPE.pathname;
 const CACHE_PREFIX='agpeya-gate-'+encodeURIComponent(BASE)+'-';
-const CACHE=CACHE_PREFIX+(typeof "1bdddc2a868d"==='undefined'?'dev':"1bdddc2a868d");
-const PRECACHE=typeof ["/agpeya-gate/","/agpeya-gate/manifest.webmanifest","/agpeya-gate/favicon.svg","/agpeya-gate/icon-192.png","/agpeya-gate/icon-512.png","/agpeya-gate/prayer-sources.json","/agpeya-gate/assets/index-B606MMwO.css","/agpeya-gate/assets/index-Lu_1tGqb.js"]==='undefined'?[]:["/agpeya-gate/","/agpeya-gate/manifest.webmanifest","/agpeya-gate/favicon.svg","/agpeya-gate/icon-192.png","/agpeya-gate/icon-512.png","/agpeya-gate/prayer-sources.json","/agpeya-gate/assets/index-B606MMwO.css","/agpeya-gate/assets/index-Lu_1tGqb.js"];
+const CACHE=CACHE_PREFIX+(typeof "398c015501fd"==='undefined'?'dev':"398c015501fd");
+const PRECACHE=typeof ["/agpeya-gate/","/agpeya-gate/manifest.webmanifest","/agpeya-gate/favicon.svg","/agpeya-gate/icon-192.png","/agpeya-gate/icon-512.png","/agpeya-gate/prayer-sources.json","/agpeya-gate/assets/index-B606MMwO.css","/agpeya-gate/assets/index-DXht3php.js","/agpeya-gate/assets/local-api-BNdhaQC2.js","/agpeya-gate/assets/reminder-client-fdXHwrYH.js"]==='undefined'?[]:["/agpeya-gate/","/agpeya-gate/manifest.webmanifest","/agpeya-gate/favicon.svg","/agpeya-gate/icon-192.png","/agpeya-gate/icon-512.png","/agpeya-gate/prayer-sources.json","/agpeya-gate/assets/index-B606MMwO.css","/agpeya-gate/assets/index-DXht3php.js","/agpeya-gate/assets/local-api-BNdhaQC2.js","/agpeya-gate/assets/reminder-client-fdXHwrYH.js"];
 const inScope=url=>url.origin===SCOPE.origin&&url.pathname.startsWith(BASE);
 const cached=async request=>(await caches.open(CACHE)).match(request);
 function readingUrl(value){
