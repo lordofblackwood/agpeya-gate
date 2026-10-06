@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-02",
+  "language": "en",
+  "tradition": "Coptic Orthodox",
+  "containsPrayerText": false,
+  "bundledPrayerTextPermitted": false,
+  "rightsStatus": "No complete English translation cleared for redistribution; personal import required.",
+  "scope": "Personal Gospel bodies and complete lay absolution sections only, in source order.",
+  "defaultExclusions": ["psalms", "introductory prayers", "litanies", "Creed", "responses", "general concluding prayer", "Veil office", "Midnight Praise's additional priest Gospel", "priestly absolution"],
+  "sources": [
+    {
+      "id": "copticchurch-online",
+      "title": "The Agpeya, CopticChurch.net",
+      "publisher": "CopticChurch.net, sponsored by St. Mark's Coptic Orthodox Church, Jersey City, New Jersey",
+      "edition": "Undated online English edition; numbered translation edition not established",
+      "url": "https://www.copticchurch.net/liturgy/agpeya/",
+      "usage": "Structural reference and personal comparison",
+      "redistribution": "Not established; no express reuse permission found on inspected office pages",
+      "permissionObtained": false
+    },
+    {
+      "id": "montreal-1998",
+      "title": "The Agpeya: The Coptic Orthodox Prayer Book of the Hours",
+      "publisher": "Coptic Orthodox Church of St. George & St. Joseph, Montreal, Quebec, Canada",
+      "edition": "1998; introductory text dated January 1998",
+      "url": "https://stgeorgestjoseph.ca/The%20AGPEYA/AgpeyaSTGJ/00Intro.pdf",
+      "copyrightEvidence": "PDF page 2: copyright 1998, all rights reserved",
+      "translationEvidence": "PDF page 3: Gospel passages use NKJV; litanies and absolutions reference Coptic and Arabic originals",
+      "redistribution": "Not permitted without applicable permission",
+      "permissionObtained": false,
+      "midnightUrl": "https://stgeorgestjoseph.ca/The%20AGPEYA/AgpeyaSTGJ/08Midnight.pdf"
+    },
+    {
+      "id": "agpeya-org-online",
+      "title": "Agpeya: Coptic Book of Hours",
+      "publisher": "Agpeya.org",
+      "edition": "Online English text; translation edition not established",
+      "url": "https://www.agpeya.org/",
+      "usage": "Independent cross-check of headings and passage endpoints",
+      "redistribution": "Not established; public access is not a redistribution licence",
+      "permissionObtained": false
+    }
+  ],
+  "boundaryRules": {
+    "gospel": "Biblical reading body from first verse through source endpoint; exclude headings, introduction, responses and following litany.",
+    "absolution": "All prose beneath the relevant absolution heading through its final Amen; stop before the next heading or instruction.",
+    "textIntegrity": "Preserve source spelling and wording; do not generate or harmonize prayer text.",
+    "editionReview": "Require an explicit review against the selected edition; structural validation does not prove authenticity."
+  },
+  "offices": [
+    {
+      "id": "first",
+      "title": "First Hour",
+      "alternateName": "Prime",
+      "sourceUrl": "https://www.copticchurch.net/liturgy/agpeya/1.firsthour.html",
+      "crossCheckUrl": "https://www.agpeya.org/prime/",
+      "passages": [
+        {"id": "first-gospel", "kind": "gospel", "title": "Gospel", "citation": "John 1:1-17", "sourceHeading": "The Gospel"},
+        {"id": "first-absolution-1", "kind": "absolution", "title": "First absolution", "sourceHeading": "The Absolution", "endsBeforeHeading": "Another Absolution"},
+        {"id": "first-absolution-2", "kind": "absolution", "title": "Second absolution", "sourceHeading": "Another Absolution", "endsBeforeHeading": "Concluding Prayer for Every Hour"}
+      ]
+    },
+    {
+      "id": "third",
+      "title": "Third Hour",
+      "alternateName": "Terce",
+      "sourceUrl": "https://www.copticchurch.net/liturgy/agpeya/2.thirdhour.html",
+      "crossCheckUrl": "https://www.agpeya.org/terce/",
+      "boundaryNote": "Primary heading labels John 14:26-15:3; actual reading includes opening clause of 15:4. Agpeya.org labels through 15:4 but likewise includes only its first clause. Preserve actual source endpoint rather than extending to the full verse.",
+      "passages": [
+        {"id": "third-gospel", "kind": "gospel", "title": "Gospel", "citation": "John 14:26-15:4a", "sourceHeading": "The Gospel", "sourcePrintedCitation": "John 14:26-15:3"},
+        {"id": "third-absolution", "kind": "absolution", "title": "Absolution", "sourceHeading": "The Absolution", "endsBeforeHeading": "Concluding Prayer for Every Hour"}
+      ]
+    },
+    {
+      "id": "sixth",
+      "title": "Sixth Hour",
+      "alternateName": "Sext",
+      "sourceUrl": "https://www.copticchurch.net/liturgy/agpeya/3.sixthhour.html",
+      "crossCheckUrl": "https://www.agpeya.org/sext/",
+      "passages": [
+        {"id": "sixth-gospel", "kind": "gospel", "title": "Gospel", "citation": "Matthew 5:1-16", "sourceHeading": "The Gospel"},
+        {"id": "sixth-absolution", "kind": "absolution", "title": "Absolution", "sourceHeading": "The Absolution", "endsBeforeHeading": "Concluding Prayer for Every Hour"}
+      ]
+    },
+    {
+      "id": "ninth",
+      "title": "Ninth Hour",
+      "alternateName": "None",
+      "sourceUrl": "https://www.copticchurch.net/liturgy/agpeya/4.ninthhour.html",
+      "crossCheckUrl": "https://www.agpeya.org/none/",
+      "passages": [
+        {"id": "ninth-gospel", "kind": "gospel", "title": "Gospel", "citation": "Luke 9:10-17", "sourceHeading": "The Gospel"},
+        {"id": "ninth-absolution", "kind": "absolution", "title": "Absolution", "sourceHeading": "The Absolution", "endsBeforeHeading": "Concluding Prayer for Every Hour"}
+      ]
+    },
+    {
+      "id": "vespers",
+      "title": "Vespers",
+      "alternateName": "Eleventh Hour",
+      "sourceUrl": "https://www.copticchurch.net/liturgy/agpeya/5.eleventhhour.html",
+      "crossCheckUrl": "https://www.agpeya.org/vespers/",
+      "passages": [
+        {"id": "vespers-gospel", "kind": "gospel", "title": "Gospel", "citation": "Luke 4:38-41", "sourceHeading": "The Gospel"},
+        {"id": "vespers-absolution", "kind": "absolution", "title": "Absolution", "sourceHeading": "The Absolution", "endsBeforeHeading": "Concluding Prayer for Every Hour"}
+      ]
+    },
+    {
+      "id": "compline",
+      "title": "Compline",
+      "alternateName": "Twelfth Hour",
+      "sourceUrl": "https://www.copticchurch.net/liturgy/agpeya/6.twelvthhour.html",
+      "crossCheckUrl": "https://www.agpeya.org/compline/",
+      "passages": [
+        {"id": "compline-gospel", "kind": "gospel", "title": "Gospel", "citation": "Luke 2:25-32", "sourceHeading": "The Gospel"},
+        {"id": "compline-absolution", "kind": "absolution", "title": "Absolution", "sourceHeading": "The Absolution", "endsBeforeHeading": "Concluding Prayer for Every Hour"}
+      ]
+    },
+    {
+      "id": "midnight",
+      "title": "Midnight",
+      "sourceUrl": "https://www.copticchurch.net/liturgy/agpeya/8.midnight.html",
+      "crossCheckUrl": "https://stgeorgestjoseph.ca/The%20AGPEYA/AgpeyaSTGJ/08Midnight.pdf",
+      "watchCount": 3,
+      "boundaryNote": "Three watch Gospels followed by one common lay absolution. The further Luke 2:29-32 reading and priestly absolution have separate liturgical rubrics and are excluded from this default personal profile.",
+      "passages": [
+        {"id": "midnight-watch-1-gospel", "kind": "gospel", "title": "First Watch Gospel", "watch": 1, "citation": "Matthew 25:1-13", "sourceHeading": "The Gospel"},
+        {"id": "midnight-watch-2-gospel", "kind": "gospel", "title": "Second Watch Gospel", "watch": 2, "citation": "Luke 7:36-50", "sourceHeading": "The Gospel"},
+        {"id": "midnight-watch-3-gospel", "kind": "gospel", "title": "Third Watch Gospel", "watch": 3, "citation": "Luke 12:32-46", "sourceHeading": "The Gospel"},
+        {"id": "midnight-absolution", "kind": "absolution", "title": "Midnight absolution", "sourceHeading": "The Absolution", "endsBeforeHeading": "Concluding Prayer for Every Hour"}
+      ]
+    }
+  ],
+  "sample": {
+    "id": "microphone-check-original-v1",
+    "title": "Microphone check — not an Agpeya prayer",
+    "kind": "setup-sample",
+    "isPrayer": false,
+    "mayCompletePrayerOccurrence": false,
+    "text": "This is a microphone check. I am reading each sentence aloud at a comfortable pace. The garden path turns beside a quiet fountain. I can pause, breathe, and continue from the words on the screen.",
+    "source": "Original nonreligious test passage authored for this project"
+  }
+}
