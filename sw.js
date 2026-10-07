@@ -1,8 +1,8 @@
 const SCOPE=new URL(self.registration.scope);
 const BASE=SCOPE.pathname;
 const CACHE_PREFIX='agpeya-gate-'+encodeURIComponent(BASE)+'-';
-const CACHE=CACHE_PREFIX+(typeof "398c015501fd"==='undefined'?'dev':"398c015501fd");
-const PRECACHE=typeof ["/agpeya-gate/","/agpeya-gate/manifest.webmanifest","/agpeya-gate/favicon.svg","/agpeya-gate/icon-192.png","/agpeya-gate/icon-512.png","/agpeya-gate/prayer-sources.json","/agpeya-gate/assets/index-B606MMwO.css","/agpeya-gate/assets/index-DXht3php.js","/agpeya-gate/assets/local-api-BNdhaQC2.js","/agpeya-gate/assets/reminder-client-fdXHwrYH.js"]==='undefined'?[]:["/agpeya-gate/","/agpeya-gate/manifest.webmanifest","/agpeya-gate/favicon.svg","/agpeya-gate/icon-192.png","/agpeya-gate/icon-512.png","/agpeya-gate/prayer-sources.json","/agpeya-gate/assets/index-B606MMwO.css","/agpeya-gate/assets/index-DXht3php.js","/agpeya-gate/assets/local-api-BNdhaQC2.js","/agpeya-gate/assets/reminder-client-fdXHwrYH.js"];
+const CACHE=CACHE_PREFIX+(typeof "b9f7b791c4b3"==='undefined'?'dev':"b9f7b791c4b3");
+const PRECACHE=typeof ["/agpeya-gate/","/agpeya-gate/manifest.webmanifest","/agpeya-gate/favicon.svg","/agpeya-gate/icon-192.png","/agpeya-gate/icon-512.png","/agpeya-gate/prayer-sources.json","/agpeya-gate/assets/index-BxOH3fkg.js","/agpeya-gate/assets/index-QIZxXZiw.css","/agpeya-gate/assets/local-api-DnCrNhmB.js","/agpeya-gate/assets/reminder-client-BJa9j1N4.js"]==='undefined'?[]:["/agpeya-gate/","/agpeya-gate/manifest.webmanifest","/agpeya-gate/favicon.svg","/agpeya-gate/icon-192.png","/agpeya-gate/icon-512.png","/agpeya-gate/prayer-sources.json","/agpeya-gate/assets/index-BxOH3fkg.js","/agpeya-gate/assets/index-QIZxXZiw.css","/agpeya-gate/assets/local-api-DnCrNhmB.js","/agpeya-gate/assets/reminder-client-BJa9j1N4.js"];
 const inScope=url=>url.origin===SCOPE.origin&&url.pathname.startsWith(BASE);
 const cached=async request=>(await caches.open(CACHE)).match(request);
 function readingUrl(value){
